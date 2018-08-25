@@ -11,8 +11,19 @@ Auth: PguRO8UGBa2Bw9o6aLyAor4H7qyQGpOpeQEa8Wrq
 #define FIREBASE_AUTH "PguRO8UGBa2Bw9o6aLyAor4H7qyQGpOpeQEa8Wrq"
 
 void setup() {
-  pinMode(D1, OUTPUT);
-  pinMode(D2, OUTPUT);
+  Serial.begin(115200);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  Serial.print("Please Wait");
+  while (WiFi.status() != WL_CONNECTED
+  {
+    Serial.print(".");
+    delay(1000);
+  }
+  Serial.println("");
+  Serial.println("Connected.");
+  Serial.print("IP Address : "):
+  Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
+  
 }
 
 void loop() {
