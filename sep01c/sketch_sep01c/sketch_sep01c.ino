@@ -29,4 +29,47 @@ void setup() {
  Firebase.setInt("ArDuInO/Servo",0);
  myservo.attach(D6);
 
+ void loop() {
+
+  myservo.write(Firebase.getInt("ArDuInO/Servo"));
+
+  if (Firebase.available()) {
+    FirebaseObject event = Firebase.readEVent();
+    int data = event.getInt("data");
+
+    Serial.println(data);
+    if (data==0)
+    {
+      myservo.write(0);
+    }
+    else if (data==45)
+    {
+      myservo.write(45);
+    }
+    if (data==90)
+    {
+      myservo.write(90);
+    }
+    else if (data==105)
+    {
+      myservo.write(105);
+    }
+    if (data==120)
+    {
+      mysservo.write(120);
+    }
+    else if (data==135)
+    {
+      myservo.write(135);
+    }
+    if (data==160)
+    {
+      myservo.write(160);
+    }
+    else if (data==180)
+    {
+      myservo.write(180);
+    }
+ }
+
 
