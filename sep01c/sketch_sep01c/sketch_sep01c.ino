@@ -2,8 +2,8 @@
 #include <FirebaseArduino.h>
 #include <Servo.h>
 
-#define WIFI_SSID "Jet"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_SSID "iphone7"
+#define WIFI_PASSWORD "123456789"
 
 #define FIREBASE_URL "ionicarduino-2393a.firebaseio.com"
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
