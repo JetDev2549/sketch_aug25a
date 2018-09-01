@@ -12,7 +12,7 @@ const int LEDPin = D1;
 void setup() {
   
  Serial.begin(115200);
- Serial.println(WiFi.localIP);
+ Serial.println(WiFi.localIP());
  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
  while (WiFi.status() != WL_CONNECTED)
   {
@@ -24,12 +24,13 @@ void setup() {
  Serial.print("Connected.");
  Serial.println(WiFi.localIP());
 
- pinMode(LED, OUTPUT);
+ pinMode(LEDPin, OUTPUT);
 
- Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+ Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
  Firebase.setInt("ArDUINO/LED", 0);
 
- void loop() {{
-  digitalWrite(LED
+ void loop() {
+  digitalWrite(LED, Firebase.getInt("ArDUINO/LED"));
+  delay(200);
  }
 
