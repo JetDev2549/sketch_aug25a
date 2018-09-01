@@ -6,3 +6,30 @@
 
 #define FIREBASE_URL "ionicarduino-2393a.firebaseio.com"
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
+
+const int LEDPin = D1;
+
+void setup() {
+  
+ Serial.begin(115200);
+ Serial.println(WiFi.localIP);
+ WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+ while (WiFi.status() != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+
+ Serial.println();
+ Serial.print("Connected.");
+ Serial.println(WiFi.localIP());
+
+ pinMode(LED, OUTPUT);
+
+ Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+ Firebase.setInt("ArDUINO/LED", 0);
+
+ void loop() {{
+  digitalWrite(LED
+ }
+
