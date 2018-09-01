@@ -9,8 +9,8 @@
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
 
 const int DHTPin = D5;
+const int DHTType DHT11
 
-int DHTValue = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -23,10 +23,25 @@ void setup() {
   }
   Serial.println("");
   Serial.println("Connected.");
-  Serial.print("IP Address : ");
+  Serial.print("WiFi.localIP()");
   Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
-  Firebase.stream("/DHTValue/");
-  pinMode(buttonPin,INPUT);
+  Serial.begin(115200);
+  Serial.println();
+  dht.begin()
   
+}
+
+void loop() {
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  //Credits to auditronics.com for helping me out. with the above part.
+  if (isnan(t)|| isnan(h)) {
+    Serial.println("Failed");
+  } else {
+    Firebase
+  }
+   
+
+
 }
 
