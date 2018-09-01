@@ -2,8 +2,8 @@
 #include <FirebaseArduino.h>
 #include <ESP8266WiFi.h>
 
-#define WIFI_SSID "heating_spotttt"
-#define WIFI_PASSWORD "lmaoman123"
+#define WIFI_SSID "<WIFI_SSID here>"
+#define WIFI_PASSWORD "<Password Here>"
 
 #define FIREBASE_URL "ionicarduino-2393a.firebaseio.com"
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
