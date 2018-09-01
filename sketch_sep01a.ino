@@ -23,7 +23,7 @@ void setup() {
   }
   Serial.println("");
   Serial.println("Connected.");
-  Serial.print("WiFi.localIP()");
+  Serial.print(WiFi.localIP());
   Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
   Serial.begin(115200);
   Serial.println();
@@ -38,7 +38,8 @@ void loop() {
   if (isnan(t)|| isnan(h)) {
     Serial.println("Failed");
   } else {
-    Firebase
+    Firebase.setInt(h);
+    Firebase.setInt
   }
    
 
