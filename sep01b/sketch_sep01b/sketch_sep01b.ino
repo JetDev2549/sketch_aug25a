@@ -28,9 +28,9 @@ void setup() {
 
  Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
  Firebase.setInt("ArDUINO/LED", 0);
-
- void loop() {
-  digitalWrite(LED, Firebase.getInt("ArDUINO/LED"));
+}
+void loop() {
+  digitalWrite(LEDPin, Firebase.getInt("ArDUINO/LED"));
   delay(200);
  }
 
