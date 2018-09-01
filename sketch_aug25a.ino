@@ -1,9 +1,6 @@
-#include <Firebase.h>
-#include <FirebaseArduino.h>
-#include <FirebaseCloudMessaging.h>
-#include <FirebaseError.h>
-#include <FirebaseHttpClient.h>
-#include <FirebaseObject.h>
+#include <Adafruit_Sensor.h>
+
+#include <Adafruit_Sensor.h>
 
 
 #include <FirebaseArduino.h>

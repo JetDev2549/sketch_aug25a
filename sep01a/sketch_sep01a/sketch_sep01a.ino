@@ -13,6 +13,7 @@
 
 const int DHTPin = D5;
 const int DHTType = DHT11;
+const int LEDPin = D1;
  DHT dht(DHTPin, DHTType);
 
 void setup() {
@@ -53,7 +54,15 @@ void loop() {
   Serial.print("H: ");
   Serial.print(humF);
   Serial.println("%");
+  if (humidity > 25)
+  {
+    digitalWrite(LEDPin, HIGH);
+  } else {
+    digitalWrite(LEDPin, LOW);
   }
+  
+  
+  
    
 
 
