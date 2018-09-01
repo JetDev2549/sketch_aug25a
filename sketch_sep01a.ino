@@ -32,14 +32,24 @@ void setup() {
 }
 
 void loop() {
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-  //Credits to auditronics.com for helping me out. with the above part.
-  if (isnan(t)|| isnan(h)) {
-    Serial.println("Failed");
-  } else {
-    Firebase.setInt(h);
-    Firebase.setInt
+  float temperature, humidity;
+
+  humidity = dht.readHumidity();
+  temperature = dht.readTemperature();
+  delay(2000);
+
+  char tempF[6];
+  char humF[6];
+  dtostrf(temperature, 5, 1, tempF));
+  dtostrf(humidity, 5, 1, humF));
+  Firebase.setFloat("Arduino/temperature", atof(tempF));
+  Firebase,setFloat("Arduino/humidity", atof(humF));
+  Serial.print("T:");
+  Serial.print(tempF);
+  Serial.print("C0");
+  Serial.print("H: ");
+  Serial.print(humF);
+  Serial.println("%");
   }
    
 
