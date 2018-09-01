@@ -25,16 +25,17 @@ void setup() {
  Serial.print("Connected.");
  Serial.println(WiFi.localIP());
 
- Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+ Firebase.begin(FIREBASE_URL, FIREBASE_AUTH);
  Firebase.setInt("ArDuInO/Servo",0);
  myservo.attach(D6);
 
- void loop() {
+}
+void loop() {
 
   myservo.write(Firebase.getInt("ArDuInO/Servo"));
 
   if (Firebase.available()) {
-    FirebaseObject event = Firebase.readEVent();
+    FirebaseObject event = Firebase.readEvent();
     int data = event.getInt("data");
 
     Serial.println(data);
@@ -56,7 +57,7 @@ void setup() {
     }
     if (data==120)
     {
-      mysservo.write(120);
+      myservo.write(120);
     }
     else if (data==135)
     {
