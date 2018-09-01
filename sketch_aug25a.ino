@@ -5,6 +5,7 @@
 #define WIFI_SSID "<WIFI_SSID here>"
 #define WIFI_PASSWORD "<Password Here>"
 
+//Example Links Below. Do Not Copy These Links!
 #define FIREBASE_URL "ionicarduino-2393a.firebaseio.com"
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
 
