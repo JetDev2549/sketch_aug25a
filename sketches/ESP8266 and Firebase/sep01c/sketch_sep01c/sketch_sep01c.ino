@@ -63,9 +63,9 @@ void loop() {
     {
       myservo.write(135);
     }
-    if (data==160)
+    if (data==150)
     {
-      myservo.write(160);
+      myservo.write(150);
     }
     else if (data==180)
     {
