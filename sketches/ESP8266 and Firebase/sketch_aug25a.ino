@@ -12,6 +12,7 @@
 //Example Links Below. Do Not Copy These Links!
 #define FIREBASE_URL "ionicarduino-2393a.firebaseio.com"
 #define FIREBASE_AUTH "lelyI1Z6qbaHrTaU39aYKXZCCUV9CPcT3jVLOVSA"
+//You can get these from your Project Settings.
 
 const int buttonPin = D2;
 const int ledPin = D3;
