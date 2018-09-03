@@ -1,6 +1,7 @@
 #define Trig_PIN D1
 #define Echo_PIN D2
 
+//You nned an ultrasonic sensor to use this file.
 void setup() {
   pinMode(Echo_PIN, INPUT);
   pinMode(Trig_PIN, OUTPUT);
