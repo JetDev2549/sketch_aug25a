@@ -16,6 +16,7 @@ const int DHTType = DHT11;
 //This assums that you have DHT11, if you have DHT22, type it in like this.
 //const int DHTType = DHT22;
 const int LEDPin = D1;
+const int LEDPin2 = D2;
  DHT dht(DHTPin, DHTType);
 
 void setup() {
@@ -56,13 +57,19 @@ void loop() {
   Serial.print("H: ");
   Serial.print(humF);
   Serial.println("%");
-  if (humidity > 25)
+  if (temperature > 30)
   {
     digitalWrite(LEDPin, HIGH);
   } else {
     digitalWrite(LEDPin, LOW);
   }
-  
+  if (temperature < 10)
+  {
+    digitalWrite(LEDPin2, HIGH);
+
+  } else {
+    digitalWrite(LEDPin2, LOW);
+  }
   
   
    
