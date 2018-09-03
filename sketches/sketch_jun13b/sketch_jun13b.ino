@@ -1,9 +1,10 @@
+//Libraries
 #include <Keypad.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
 
 #define Password_Length 8
-
+//You can edit
 int signalPin = 12;
 
 char Data[Password_Length];
