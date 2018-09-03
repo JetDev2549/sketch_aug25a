@@ -6,6 +6,7 @@
 
 #define FIREBASE_URL "<Firebase-URL>"
 #define FIREBASE_AUTH "<Firebase-Password>"
+//You need 
 
 const int LEDPin = D1;
 
