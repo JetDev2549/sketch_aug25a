@@ -13,6 +13,8 @@
 
 const int DHTPin = D5;
 const int DHTType = DHT11;
+//This assums that you have DHT11, if you have DHT22, type it in like this.
+//const int DHTType = DHT22;
 const int LEDPin = D1;
  DHT dht(DHTPin, DHTType);
 

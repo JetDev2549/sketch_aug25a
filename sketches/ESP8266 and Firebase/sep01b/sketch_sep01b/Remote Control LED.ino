@@ -33,5 +33,6 @@ void setup() {
 void loop() {
   digitalWrite(LEDPin, Firebase.getInt("ArDUINO/LED"));
   delay(200);
+  //Makes a new directory in Database
  }
 
