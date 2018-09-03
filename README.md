@@ -1,14 +1,5 @@
-# sketch_aug25a
-This repository is a collection of Arduino files.
+# Arduino Examples
+This repo is a collection of sample Arduino files that uses the Firebase website to help.
 
-# Which file is which?
-Sketch aug25.ino is a file that allows Firebase - Arduino to work together. When you press a button, the value on Firebase changes.
-
-Sketch sep01.ino is being planned.
-
-You do not need the other files.
-
-# Requirements
-ESP8266 board
-Arduino IDE
-Libraries speified in the files.
+Latest Stable Version - 2.0
+Latest Beta Version - 2.0.1 Test Build 1
