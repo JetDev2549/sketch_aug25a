@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
 
-#define WIFI_SSID "Jet"
-#define WIFI_PASSWORD "12345678"
+#define WIFI_SSID "<SSID>"
+#define WIFI_PASSWORD "<Password>"
 
 #define FIREBASE_URL "<Firebase-URL>"
 #define FIREBASE_AUTH "<Firebase-Password>"
