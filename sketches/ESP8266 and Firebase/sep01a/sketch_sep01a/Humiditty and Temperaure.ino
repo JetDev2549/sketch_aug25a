@@ -5,11 +5,12 @@
 
 
 
-#define WIFI_SSID "Iphone7"
-#define WIFI_PASSWORD "123456789"
+#define WIFI_SSID "<SSID>"
+#define WIFI_PASSWORD "<Password>"
 
 #define FIREBASE_URL "<Firebase-URL>"
 #define FIREBASE_AUTH "<Firebase-Password>"
+//Use Realtime Database, because Cloud Firestore is not compatible with Arduino yet.
 
 const int DHTPin = D5;
 const int DHTType = DHT11;
