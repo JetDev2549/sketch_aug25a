@@ -54,7 +54,6 @@ void loop() {
   Firebase.setFloat("Arduino/humidity", atof(humF));
   Serial.print("T:");
   Serial.print(tempF);
-  Serial.print("C0");
   Serial.print("H: ");
   Serial.print(humF);
   Serial.println("%");
