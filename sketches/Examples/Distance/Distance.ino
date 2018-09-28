@@ -1,5 +1,6 @@
 #define Trig_PIN D1
 #define Echo_PIN D2
+//Change this according to your location of wires!
 
 //You nned an ultrasonic sensor to use this file.
 void setup() {
